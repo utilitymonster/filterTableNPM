@@ -1,0 +1,33 @@
+{
+  "name": "react-learn",
+  "version": "1.0.0",
+  "description": "Learning folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-jest": "^6.0.1",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "chart.js": "^1.0.2",
+    "jest-cli": "^0.8.2",
+    "jquery": "^2.2.1",
+    "react": "^0.14.7",
+    "react-addons-test-utils": "^0.14.7",
+    "react-chartjs": "^0.7.3",
+    "react-dom": "^0.14.7"
+  }
+}
