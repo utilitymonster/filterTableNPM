@@ -398,14 +398,10 @@ var pieChart = React.createClass({
     var caseSensitive = this.props.caseSensitive || false;
     var counter = 0;
 
-    console.log("reworking graph", searchText, caseSensitive);
-
     if (this.props.rows) {
       this.props.rows.forEach(function (row) {
         if (fitsFilter(row, searchText, caseSensitive)) {
           counter++;
-
-          console.log(row.name, row.passengers);
 
           if (!passengers[row.passengers]) {
             passengers[row.passengers] = new Passenger(row.passengers);
@@ -442,7 +438,6 @@ var SearchBar = React.createClass({
 	displayName: 'SearchBar',
 
 	handleChange: function () {
-		console.log('handleChange', this.refs.caseSensitive.checked);
 		this.props.onUserInput(this.refs.searchText.value, this.refs.caseSensitive.checked);
 	},
 	render: function () {

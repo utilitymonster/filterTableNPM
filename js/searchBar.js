@@ -3,7 +3,6 @@ var React = require('react');
 
 var SearchBar = React.createClass({
 	handleChange: function(){
-		console.log('handleChange', this.refs.caseSensitive.checked);
 		this.props.onUserInput(
 			this.refs.searchText.value,
 			this.refs.caseSensitive.checked

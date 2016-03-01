@@ -1,6 +1,5 @@
 // passenger-test.js
 
-// __tests__/filter-test.js
 jest.dontMock('../js/passenger.js');
 
 //import React from 'react';
